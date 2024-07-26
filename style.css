@@ -142,7 +142,7 @@ main {
 .work {
     position: absolute; /* 画面全体に対して絶対位置を設定 */
     top: 900px; /* 画面の上端に配置 */
-    left: 20px; /* 画面の左端に配置 */
+    left: 100px; /* 画面の左端に配置 */
     width: 70vw; /* ビューポートの幅に合わせる */
     height: auto; /* 高さは内容に合わせる */
     margin: 0; /* 上下の余白をなくす */
@@ -150,13 +150,13 @@ main {
 }
 
 .work-content {
-    display: flex; /* Flexboxで画像と文字を横並びにする */
+    display: flex; 
     align-items: center; /* 縦方向に中央揃え */
     gap: 1rem; /* 画像と文字の間にスペースを追加 */
 }
 
 .work img {
-    width: 50%; /* 親要素の幅に合わせる（必要に応じて調整） */
+    width: 60%; /* 親要素の幅に合わせる（必要に応じて調整） */
     height: auto; /* 高さは自動調整 */
     border-radius: 8px; /* 角丸 */
 }
