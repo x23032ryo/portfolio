@@ -139,7 +139,7 @@ main {
     opacity: 0.5;
 }
 
-.work {
+.work-content {
     position: absolute; /* 画面全体に対して絶対位置を設定 */
     top: 900px; /* 画面の上端に配置 */
     left: 100px; /* 画面の左端に配置 */
@@ -164,4 +164,14 @@ main {
 .work-text {
     max-width: 50%; /* 文字の幅を調整 */
     color: var(--text-color); /* テキストの色を設定 */
+}
+
+.desk{
+    position: absolute;
+    top:1300px;
+    left: 100px; /* 画面の左端に配置 */
+    width: 70vw; /* ビューポートの幅に合わせる */
+    height: auto; /* 高さは内容に合わせる */
+    margin: 0; /* 上下の余白をなくす */
+    padding: 0; /* 上下の余白をなくす */
 }
