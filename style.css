@@ -166,12 +166,102 @@ main {
     color: var(--text-color); /* テキストの色を設定 */
 }
 
-.desk{
-    position: absolute;
-    top:1300px;
+.desk {
+    position: absolute; /* 画面全体に対して絶対位置を設定 */
+    top: 900px; /* 画面の上端に配置 */
     left: 100px; /* 画面の左端に配置 */
     width: 70vw; /* ビューポートの幅に合わせる */
     height: auto; /* 高さは内容に合わせる */
     margin: 0; /* 上下の余白をなくす */
     padding: 0; /* 上下の余白をなくす */
+}
+
+.desk {
+    display: flex; 
+    align-items: center; /* 縦方向に中央揃え */
+    gap: 1rem; /* 画像と文字の間にスペースを追加 */
+}
+
+.work img {
+    width: 60%; /* 親要素の幅に合わせる（必要に応じて調整） */
+    height: auto; /* 高さは自動調整 */
+    border-radius: 8px; /* 角丸 */
+}
+
+.work-text {
+    max-width: 50%; /* 文字の幅を調整 */
+    color: var(--text-color); /* テキストの色を設定 */
+}
+
+.desk{
+    position: absolute;
+    top:1500px;
+    left: 100px; /* 画面の左端に配置 */
+    width: 70vw; /* ビューポートの幅に合わせる */
+    height: auto; /* 高さは内容に合わせる */
+    margin: 0; /* 上下の余白をなくす */
+    padding: 0; /* 上下の余白をなくす */
+}
+
+/* フッターのスタイル */
+footer {
+    position: fixed; /* 固定位置 */
+    bottom: 0; /* 画面の下に配置 */
+    width: 100%; /* 全幅 */
+    text-align: center; /* 中央揃え */
+    font-size: 10px; /* 小さく表示 */
+    color: var(--text-color); /* テキストの色を設定 */
+    background-color: rgba(0, 0, 0, 0.5); /* 背景色（必要に応じて調整） */
+    padding: 5px 0; /* 上下の間隔を確保 */
+}
+
+/* 画像の下に余白を追加 */
+.work-content img,
+.desk img {
+    margin-bottom: 50px; /* 画像の下にマージンを追加 */
+}
+
+
+
+/* モーダルのスタイル */
+.modal {
+    display: none; /* モーダルを非表示にする */
+    position: fixed; /* 固定位置 */
+    z-index: 100; /* 前面に表示 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 全幅 */
+    height: 100%; /* 全高 */
+    overflow: auto; /* スクロール可能にする */
+    background-color: rgba(0, 0, 0, 0.9); /* 背景色 */
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 垂直方向に中央揃え */
+    justify-content: center; /* 水平方向に中央揃え */
+    padding: 20px; /* 上下左右に間隔を確保 */
+}
+
+/* モーダル内の画像 */
+.modal-content {
+    max-width: 80%; 
+    max-height: 80%; 
+    margin: auto; /* 中央揃え */
+    display: block; /* ブロック要素 */
+}
+
+/* クローズボタン */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
